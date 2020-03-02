@@ -1,0 +1,20 @@
+logging:
+  pattern:
+    console: "%d{dd-MM-yyyy HH:mm:ss.SSS} %magenta([%thread]) %highlight(%-5level) %logger{36}.%M - %msg%n"
+  level:
+    root: INFO
+    org.springframework.web: DEBUG
+    org.hibernate: ERROR
+
+spring:
+  h2:
+    console:
+      path: "/h2-console"
+      enabled: true
+  jpa:
+    show-sql: true
+
+client:
+  serpro:
+    url: "https://apigateway.serpro.gov.br/consulta-cpf-trial/v1"
+    user-token: ${SERPRO-TOKEN:"4e1a1858bdd584fdc077fb7d80f39283"}

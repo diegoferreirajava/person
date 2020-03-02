@@ -1,0 +1,20 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/cpf/53141363099"
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "jsonBody": {
+      "ni":"53141363099",
+      "nome":"Nome do CPF Teste",
+      "situacao": {
+        "codigo":"0",
+        "descricao":"Regular"
+      }
+    }
+  }
+}
